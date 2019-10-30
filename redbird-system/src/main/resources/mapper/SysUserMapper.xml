@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.redbird.marco.sys.dao.SysUserDao">
+    <resultMap id="baseResultMap" type="com.redbird.marco.sys.model.User">
+        <result column="id" property="id"></result>
+        <result column="username" property="username"></result>
+        <result column="nickname" property="nickname"></result>
+        <result column="age" property="age"></result>
+        <result column="gender" property="gender"></result>
+        <result column="mobile_phone" property="mobilePhone"></result>
+        <result column="address" property="address"></result>
+        <result column="create_time" property="createTime"></result>
+
+    </resultMap>
+    <select id="findUserById" resultMap="baseResultMap" parameterType="Long">
+      select id,username,nickname,age,gender,mobile_phone,address,create_time
+      from sys_user where id = #{id}
+    </select>
+    <select id="selectByPageNumSize" resultMap="baseResultMap">
+        select * from sys_user
+    </select>
+</mapper>
