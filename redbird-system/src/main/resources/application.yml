@@ -6,4 +6,5 @@ spring:
     active: dev
   jackson:
       time-zone: GMT+8
-
+logging:
+  config: classpath:logback-spring.xml

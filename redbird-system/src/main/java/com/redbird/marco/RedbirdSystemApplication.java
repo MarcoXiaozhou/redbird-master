@@ -10,6 +10,7 @@ public class RedbirdSystemApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(RedbirdSystemApplication.class, args);
+        System.out.println("启动成功");
     }
 
 }
