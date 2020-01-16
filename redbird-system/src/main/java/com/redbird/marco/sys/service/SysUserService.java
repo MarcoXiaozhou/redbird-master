@@ -1,5 +1,7 @@
 package com.redbird.marco.sys.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.redbird.marco.sys.model.User;
 
 import java.util.List;

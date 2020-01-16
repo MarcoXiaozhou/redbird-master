@@ -1,5 +1,7 @@
 package com.redbird.marco.sys.service.impl;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.redbird.marco.sys.dao.SysUserDao;
 import com.redbird.marco.sys.model.User;
 import com.redbird.marco.sys.service.SysUserService;
@@ -30,4 +32,6 @@ public class SysUserServiceImpl implements SysUserService {
     public User findUserById(Long id) {
         return sysUserDao.findUserById(id);
     }
+
+
 }
